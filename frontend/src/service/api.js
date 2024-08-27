@@ -14,7 +14,7 @@ export const authenticateLogin = async (user) => {
 
 export const authenticateSignup = async (user) => {
   try {
-    const response = await axios.post(`${url}/signup`, user);
+    const response = await axios.post(`${url}/register`, user);
     return response.data;
   } catch (error) {
     console.error("Error while calling signup API:", error);
